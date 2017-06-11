@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div align="center">
+    <form method="post" action="">
+    {% csrf_token %}
+    {{ form.origin.label }}: {{ form.origin }}
+    <button>Create</button>
+    </form><br />
+    {% if messages %}
+        {% for message in messages %}
+            {{ message }}
+        {% endfor %}
+    {% endif %}
+</div>
+{% endblock %}

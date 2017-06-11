@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=970">
+    <meta name="description" content="">
+    <meta name="author" content="Bliznuk Philipp">
+    <title>Django Url Shortner</title>
+
+    {% block extrahead %}{% endblock extrahead %}
+  </head>
+  <body>
+
+  <div class="container-fluid">
+
+    {% block content %}{% endblock content %}
+    {% block extra_html %}{% endblock %}
+
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    {% block extra_js %}{% endblock %}
+  </div>
+  </body>
+</html>
